@@ -1,0 +1,64 @@
+#root {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 20% 20% 20%;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+#root .card {
+  margin: 4%;
+  border-radius: 2em;
+  background-color: rgba(210, 180, 140, 0.719);
+  padding: 2% 5% 2% 5%;
+  width: 90%;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .card .pokemon-name-type {
+  margin-right: 5%;
+}
+
+#root .card .pokemon-name-type .pokemon-id {
+  font-size: 90%;
+  color: black;
+}
+
+#root .card .pokemon-name-type h4 {
+  font-size: 125%;
+  color: snow;
+}
+
+#root .card img {
+  background-color: whitesmoke;
+  border-radius: 3em;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 90px;
+  height: 90px;
+}
+
+@media (max-width: 500px) {
+  #root {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+/*# sourceMappingURL=card.css.map */

@@ -1,0 +1,68 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: wheat;
+  padding: 1%;
+}
+
+header h1 {
+  font-size: 300%;
+}
+
+header span {
+  font-size: 125%;
+}
+
+header .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: whitesmoke;
+  padding: 0.5% 1% 0.5% 1%;
+  border-radius: 2em;
+  margin-top: 1%;
+}
+
+header .input img {
+  width: 27px;
+  height: 27px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  margin: 0 2% 0 1%;
+}
+
+header .input input {
+  background-color: whitesmoke;
+  border: none;
+  outline: none;
+  font-size: large;
+  width: 100%;
+}
+
+header .input ::-webkit-input-placeholder {
+  color: silver;
+}
+
+header .input :-ms-input-placeholder {
+  color: silver;
+}
+
+header .input ::-ms-input-placeholder {
+  color: silver;
+}
+
+header .input ::placeholder {
+  color: silver;
+}
+/*# sourceMappingURL=header.css.map */

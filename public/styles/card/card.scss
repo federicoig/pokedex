@@ -1,0 +1,42 @@
+#root{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    .card {
+        margin: 4%;
+        border-radius: 2em;
+        background-color: rgba(210, 180, 140, 0.719);
+        padding: 2% 5% 2% 5%;
+        width: 90%;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        align-content: center;
+        align-items: center;
+        .pokemon-name-type {
+            margin-right: 5%;
+            .pokemon-id{
+                font-size: 90%;
+                color: black;
+            }
+            h4{
+                font-size: 125%;
+                color: snow;
+            }
+        }
+        img{
+            background-color: whitesmoke;
+            border-radius: 3em;
+            justify-content: end;
+            width: 90px;
+            height: 90px;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    #root{
+        grid-template-columns: 50% 50%;       
+    } 
+}

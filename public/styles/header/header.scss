@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: wheat;
+    padding: 1%;
+    h1 {
+        font-size: 300%;
+    }
+    span {
+        font-size: 125%;
+    }
+    .input {
+        display: flex;
+        justify-content: center;
+        background-color: whitesmoke;
+        padding: 0.5% 1% 0.5% 1%;
+        border-radius: 2em;
+        margin-top: 1%;
+        img{
+            width: 27px;
+            height: 27px;
+            transform: scaleX(-1);            
+            margin: 0 2% 0 1%;
+        }
+        input {
+            background-color: whitesmoke;
+            border: none;
+            outline: none;
+            font-size: large;
+            width: 100%;
+        }
+        ::placeholder{
+          color: silver;  
+        }
+    }
+}
