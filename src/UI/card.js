@@ -1,9 +1,9 @@
+export const root = document.querySelector("#root")
+
 export function createPokemonCard(name, id, types, image) {
     
-    const root = document.querySelector("#root")
-
     const card = `
-    <div class="card">
+    <li class="card">
         <div class="pokemon-name-type">
             <span class="pokemon-id">#${id}</span>
             <h4>${name}</h4>
@@ -13,8 +13,12 @@ export function createPokemonCard(name, id, types, image) {
             </div>
         </div>
         <img src="${image}"/>
-    </div>
+    </li>
     `
+    
+    if(root.childElementCount === 20){
+        root.innerHTML = ""
+    }
 
     return root.insertAdjacentHTML("beforeend", card)
 }

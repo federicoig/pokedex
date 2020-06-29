@@ -1,24 +1,31 @@
-import { createPokemonCard } from "../createPokemonCard/card.js"
+import { createPokemonCard } from "../UI/card.js"
+
+function checkSecondaryType(types){
+    const primaryType = types[0].type.name
+
+    if(types[1]){
+        const secondaryType = types[1].type.name
+
+        return [primaryType, secondaryType]    
+        
+    }
+    else {
+        return [primaryType]
+    }
+}
+
+let array = []
 
 export function handlePokemonInfo(name, id, types, image){
-    id = String(id)
-
+    array.push(id)
+    array.sort( (a, b) => a - b)
+    
     const upperCaseFirstLetter = name.charAt(0).toUpperCase()
     name = upperCaseFirstLetter + name.slice(1)
 
-    function checkSecondaryType(){
-        const primaryType = types[0].type.name
-
-        if(types[1]){
-            const secondaryType = types[1].type.name
-
-            return [primaryType, secondaryType]    
-            
+    array.forEach(number => {
+        if(number === id){
+            createPokemonCard(name, id, checkSecondaryType(types), image)
         }
-        else {
-            return [primaryType]
-        }
-    }
-
-    createPokemonCard(name, id, checkSecondaryType(), image)
+    })
 }

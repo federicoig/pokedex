@@ -1,7 +1,7 @@
-import { getPokemonInfo } from "./getPokemonInfo/pokemon.js"
+import { getPokemonInfo } from "./PokemonAPI/getAPI.js"
 
 async function beginProcess(){
-    await getPokemonInfo("https://pokeapi.co/api/v2/pokemon")
+    await getPokemonInfo()
 }
 
 beginProcess()

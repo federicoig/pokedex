@@ -1,10 +1,12 @@
 import { handlePokemonInfo } from "../handlePokemonInfo/info.js"
+import { navAPI } from "../UI/nav.js"
 
 export async function getPokemonInfo(api){
     fetch(api)
         .then( response => response.json())
         .then( function(api) {
-            Object.values(api.results).forEach(pokemon => {
+            navAPI(api.previous, api.next)
+            Object.values(api.results).forEach( (pokemon) => {
                 fetch(pokemon.url)
                     .then(response => response.json())
                     .then( pokemon => {
@@ -14,4 +16,5 @@ export async function getPokemonInfo(api){
             })
         })
         .catch( error => console.error(error))
+
 }

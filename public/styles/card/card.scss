@@ -4,7 +4,7 @@
     .card {
         margin: 4%;
         border-radius: 2em;
-        background-color: rgba(210, 180, 140, 0.719);
+        background-color: rgba(221, 193, 157, 0.719);
         padding: 2% 5% 2% 5%;
         width: 90%;
         border: none;
@@ -14,8 +14,11 @@
         align-self: center;
         align-content: center;
         align-items: center;
+        cursor: pointer;
         .pokemon-name-type {
-            margin-right: 5%;
+            display: flex;
+            flex-direction: column;
+            margin-right: 50%;
             .pokemon-id{
                 font-size: 90%;
                 color: black;
@@ -24,8 +27,15 @@
                 font-size: 125%;
                 color: snow;
             }
+            div {
+                .badge{
+                    font-weight: 100;
+                }
+            }
         }
         img{
+            position: absolute;
+            left: 150px;
             background-color: whitesmoke;
             border-radius: 3em;
             justify-content: end;

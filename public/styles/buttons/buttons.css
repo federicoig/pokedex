@@ -1,0 +1,21 @@
+footer .previous-next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .previous-next button {
+  border: none;
+  outline: none;
+  background-color: rgba(245, 222, 179, 0.699);
+  padding: 0.5% 1% 0.5% 1%;
+  border-radius: 2em;
+}
+
+footer .previous-next .previous-button {
+  margin-right: 1%;
+}
+/*# sourceMappingURL=buttons.css.map */
