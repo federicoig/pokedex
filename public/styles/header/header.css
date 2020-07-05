@@ -9,11 +9,13 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: wheat;
-  padding: 1%;
+  background-color: #232323;
+  color: snow;
+  padding: 0.5% 1% 1% 1%;
 }
 
 header h1 {
+  letter-spacing: 1px;
   font-size: 300%;
 }
 
@@ -28,7 +30,7 @@ header .input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: whitesmoke;
+  background-color: #2d2d2d;
   padding: 0.5% 1% 0.5% 1%;
   border-radius: 2em;
   margin-top: 1%;
@@ -43,7 +45,8 @@ header .input img {
 }
 
 header .input input {
-  background-color: whitesmoke;
+  background-color: #2d2d2d;
+  color: snow;
   border: none;
   outline: none;
   font-size: large;

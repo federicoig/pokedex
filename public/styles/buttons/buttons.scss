@@ -1,12 +1,16 @@
 footer {
+    background-color: rgb(35, 35, 35);
+
     .previous-next {
         display: flex;
         justify-content: center;
         button {
             border: none;
             outline: none;
-            background-color: rgba(245, 222, 179, 0.699);
-            padding: 0.5% 1% 0.5% 1%;
+            color: snow;
+            margin-bottom: 1%;
+            background-color: rgb(25, 25, 25);
+            padding: 0.3% 1% 0.3% 1%;
             border-radius: 2em;
         }
         .previous-button{

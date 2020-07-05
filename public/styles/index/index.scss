@@ -5,4 +5,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html{
+    background-color: rgb(35, 35, 35);
+}
+
+#root {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
 

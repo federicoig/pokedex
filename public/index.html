@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index/index.css">
     <link rel="stylesheet" href="styles/header/header.css">
     <link rel="stylesheet" href="styles/card/card.css">
+    <link rel="stylesheet" href="styles/info/info.css">
     <link rel="stylesheet" href="styles/buttons/buttons.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <title>pokedex</title>
@@ -20,10 +21,14 @@
             <input placeholder="Search a pokemon..."/>
         </div>
     </header>
-    <main>
-        <ul id="root">
+    <main id="root">
+        <ul id="list">
+            Loading...
 
         </ul>
+        <div id="info">
+            
+        </div>
     </main>
     <footer>
         <div class="previous-next">

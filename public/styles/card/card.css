@@ -1,78 +1,32 @@
-#root {
+#list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20% 20% 20% 20% 20%;
-      grid-template-columns: 20% 20% 20% 20% 20%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
 }
 
-#root .card {
-  margin: 4%;
-  border-radius: 2em;
-  background-color: rgba(221, 193, 157, 0.719);
-  padding: 2% 5% 2% 5%;
-  width: 90%;
+#list .card {
+  text-align: center;
   border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  border-radius: 2em;
+  padding: 2% 5% 2% 5%;
+  margin: 2%;
   cursor: pointer;
-}
-
-#root .card .pokemon-name-type {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-right: 50%;
-}
-
-#root .card .pokemon-name-type .pokemon-id {
-  font-size: 90%;
-  color: black;
-}
-
-#root .card .pokemon-name-type h4 {
-  font-size: 125%;
   color: snow;
+  background-color: #191919;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 
-#root .card .pokemon-name-type div .badge {
+#list .card:hover {
+  color: #f5e6f0;
+  background-color: #141414;
+}
+
+#list .card h1 {
   font-weight: 100;
-}
-
-#root .card img {
-  position: absolute;
-  left: 150px;
-  background-color: whitesmoke;
-  border-radius: 3em;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  width: 90px;
-  height: 90px;
-}
-
-@media (max-width: 500px) {
-  #root {
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
-  }
+  margin: auto;
+  font-size: 125%;
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=card.css.map */

@@ -1,3 +1,7 @@
+footer {
+  background-color: #232323;
+}
+
 footer .previous-next {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,8 +14,10 @@ footer .previous-next {
 footer .previous-next button {
   border: none;
   outline: none;
-  background-color: rgba(245, 222, 179, 0.699);
-  padding: 0.5% 1% 0.5% 1%;
+  color: snow;
+  margin-bottom: 1%;
+  background-color: #191919;
+  padding: 0.3% 1% 0.3% 1%;
   border-radius: 2em;
 }
 
