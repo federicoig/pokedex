@@ -38,9 +38,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #232323;
   color: snow;
   padding: 0.5% 1% 1% 1%;
@@ -86,18 +83,22 @@ header .input input {
 }
 
 header .input ::-webkit-input-placeholder {
+  font-size: 85%;
   color: silver;
 }
 
 header .input :-ms-input-placeholder {
+  font-size: 85%;
   color: silver;
 }
 
 header .input ::-ms-input-placeholder {
+  font-size: 85%;
   color: silver;
 }
 
 header .input ::placeholder {
+  font-size: 85%;
   color: silver;
 }
 
