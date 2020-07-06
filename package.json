@@ -2,16 +2,16 @@
   "name": "pokedex",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://federicoig.github.io/pokedex/",
   "main": "index.js",
   "scripts": {
     "eslint": "./node_modules/.bin/eslint",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^4.5.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "eslint": "^7.3.1",
     "eslint-config-standard": "^14.1.1",
