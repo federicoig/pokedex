@@ -5,7 +5,7 @@ export function createCard(pokemon){
     const cards = document.querySelectorAll(".card")
 
     if(cards.length === 20){
-        list.innerHTML = ""
+        list.innerHTML = "Loading..."
     }
 
     const card = `

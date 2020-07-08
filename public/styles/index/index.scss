@@ -19,4 +19,119 @@ html{
     grid-template-columns: 50% 50%;
 }
 
+@media (max-width:1200px){
+    * {
+        font-size: 95%;
+    }
+    #list {
+        .card{
+            font-size: 100%;
+            margin: 2% 1% 2% 1%;
+        }
+    }
+    #root {
+        #info {
+            .pokemon{
+                img{
+                    margin: 2%;
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
 
+@media (max-width:900px){
+    #list {
+        .card{
+            font-size: 110%;
+            margin: 3% 1% 3% 1%;
+        }
+    }
+    #root {
+        #info {
+            .pokemon{
+                img{
+                    margin: 2%;
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:750px){
+    * {
+        font-size: 100%;
+    }
+    #list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .card{
+            font-size: 100%;
+            margin: 1% 0 1% 0;
+        }
+    }
+    #root {
+        display: flex;
+        flex-direction: column-reverse;
+        #info {
+            margin: 1% 0 1% 0;
+            .pokemon{
+                img{
+                    margin: 2%;
+                    width: 250px;
+                    height: 250px;
+                }
+                .pokemon-info{
+                    width: 35%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:600px){
+    * {
+        font-size: 99%;
+    }
+    #root {
+        #info {
+            .pokemon{
+                img{
+                    margin: 2%;
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:450px){
+    * {
+        font-size: 90%;
+    }
+    #root {
+        #info {
+            .pokemon{
+                display: flex;
+                align-items: center;
+                img{
+                    margin: 2%;
+                    width: 145px;
+                    height: 145px;
+                }
+                .pokemon-info{
+                    font-size: 120%;
+                    .name{
+                        font-size: 250%;
+                    }
+                }
+            }
+        }
+    }
+}
