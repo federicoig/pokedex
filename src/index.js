@@ -1,11 +1,13 @@
-import { navThroughPages } from "./navigation/nav.js"
-import { loadFirstPage } from "./api/loadPage.js"
-import { searchPokemon } from "./search/searchPokemon.js"
+import { setupNavigation } from "./UI/navigation.js"
+import { requestPage } from "./service/services.js"
+import { setupSearchBar } from "./UI/searchBar.js"
 
 function initialize(){
-    loadFirstPage()
-    navThroughPages()
-    searchPokemon()
+    const FIRST_PAGE = "0"
+
+    requestPage(FIRST_PAGE)
+    setupNavigation()
+    setupSearchBar()
 }
 
 initialize()

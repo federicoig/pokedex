@@ -1,10 +1,12 @@
-import { displayInfo } from "./displayInfo.js" 
+import { setCardsHandlers } from "./pokemonCard.js" 
 
-export function createCard(pokemon){
+export function setupPokemonList(pokemon){
     const list = document.querySelector("#list")
     const cards = document.querySelectorAll(".card")
 
-    if(cards.length === 20){
+    const MAX_CARDS_NUMBER = 20
+
+    if(cards.length === MAX_CARDS_NUMBER){
         list.innerHTML = "Loading..."
     }
 
@@ -15,5 +17,5 @@ export function createCard(pokemon){
     `
 
     list.innerHTML += card
-    displayInfo()    
+    setCardsHandlers()    
 }
