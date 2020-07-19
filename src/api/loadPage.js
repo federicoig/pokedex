@@ -1,26 +1,17 @@
-import { createCard } from "../UI/createCard.js"
+import { setupPokemonList } from "../UI/pokemonList.js"
 
-export function loadFirstPage(){
+export function loadPage(offset){
     const list = document.querySelector("#list")
 
-    fetch("https://pokeapi.co/api/v2/pokemon")
+    fetch(`https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=20`)
         .then(data => data.json())
         .then(data => {
             list.innerHTML = ""
 
             data.results.forEach( result => {
-                createCard(result)
+                setupPokemonList(result)
             })
         })
+    
 }
 
-export function loadPages(page){
-    fetch(page)
-        .then(data => data.json())
-        .then(data => {
-                    
-            data.results.forEach( result => {
-                createCard(result)
-            })
-        })
-}

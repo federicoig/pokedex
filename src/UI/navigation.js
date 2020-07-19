@@ -1,10 +1,10 @@
-import { loadPages } from "../api/loadPage.js"
+import { requestPage } from "../service/services.js"
 
 const previousButton = document.querySelector(".previous-button")
 const nextButton = document.querySelector(".next-button")
 const list = document.querySelector("#list")
 
-export function navThroughPages(){
+export function setupNavigation(){
     let offset = 0
 
     previousButton.addEventListener("click", () => {
@@ -14,13 +14,13 @@ export function navThroughPages(){
         else{
             offset -= 20
             list.innerHTML = ""
-            loadPages(`https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=20`)
+            requestPage(offset)
         }      
     })    
     
     nextButton.addEventListener("click", () => {
         offset += 20
         list.innerHTML = ""
-        loadPages(`https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=20`)
+        requestPage(offset)
     })   
 } 
